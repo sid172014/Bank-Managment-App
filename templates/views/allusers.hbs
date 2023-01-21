@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>All Users</title>
+    <link rel="stylesheet" href="/css/style.css">
+    <script src="https://kit.fontawesome.com/c4254e24a8.js" crossorigin="anonymous"></script>
+    {{>head}}
+</head>
+
+<body>
+    {{>header}}
+
+    {{!--
+    <h1>This is the Delete account page</h1>
+    <h3>Email</h3>
+    <input type="email" id="userEmail">
+    <h3>Password</h3>
+    <input type="password" , id="userPassword">
+    <h3 id="message"></h3>
+    <button id="userButton">Delete</button> --}}
+    <div class="allusers">
+        <div class="head">
+        <h1>All Users<p></p></h1>
+        </div>
+        <table class="tableContainer" style="width: 100%;table-layout:fixed;">
+            <thead style="width: 100;background-color:blue;color:white;">
+                <tr>
+                    <th>Name</th>
+                    <th>Email</th>
+                    <th>Balance</th>
+                </tr>
+                <tbody>
+                    
+                    {{!-- This is used to read in all the 'users' that will be sent to us by the routers we have already defined --}}
+                    {{#each data}}
+                        <tr>
+                            <td>{{name}}</td>
+                            <td>{{email}}</td>
+                            <td>$ {{balance}}</td>
+                        </tr>    
+                    {{/each}}
+                </tbody>
+            </thead>
+        </table>
+    </div>
+
+
+</body>
+
+</html>

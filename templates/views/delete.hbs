@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+     <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign Up and Log IN</title>
+    <link rel="stylesheet" href="/css/style.css">
+    {{>head}}
+    <script src="https://kit.fontawesome.com/c4254e24a8.js" crossorigin="anonymous"></script>
+    {{>head}}
+</head>
+<body>
+    {{>header}}
+
+{{!--     
+    <h1>This is the Delete account page</h1>
+    <h3>Email</h3>
+    <input type="email" id="userEmail">
+    <h3>Password</h3>
+    <input type="password", id="userPassword">
+    <h3 id="message"></h3>
+    <button id="userButton">Delete</button> --}}
+     <div class="container">
+
+        <div class="deleteAccount">
+        <div class="form-box">
+            <h1 id="title">Delete Account</h1>
+            <form>
+                <div class="input-group">
+                    
+                    <div class="input-field">
+                        <i class="fa-solid fa-envelope"></i>
+                        <input type="email" id="userEmail" placeholder="Email">
+                    </div>
+                    <div class="input-field">
+                        <i class="fa-solid fa-lock"></i>
+                        <input type="password" id="userPassword" placeholder="Password">
+                    </div>
+                    <h3 id="message"></h3>
+                </div>
+
+                <div  id="creationMessage">Hello</div>
+                <div class="btn-field">
+                    <button type="button" id="userButton">Delete</button>
+                </div>
+            </form>
+        </div>
+    </div>
+
+    </div>
+
+
+    <script src="/js/delete.js"></script>
+</body>
+</html>

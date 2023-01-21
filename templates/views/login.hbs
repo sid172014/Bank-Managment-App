@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign Up and Log IN</title>
+    <link rel="stylesheet" href="/css/style.css">
+    {{>head}}
+    <script src="https://kit.fontawesome.com/c4254e24a8.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    {{>header}}
+    {{!-- <h1>Login User</h1>
+    <div>Email Address</div>
+    <input type="email" id="loginEmail">
+    <div>Password</div>
+    <input type="password" id="loginPassword">
+    <h3 id="message"></h3>
+    <div><button id="loginButton">Login</button></div> --}}
+
+    
+    <div class="container">
+
+        <div class="signIn">
+        <div class="form-box">
+            <h1 id="title">Sign In</h1>
+            <form>
+                <div class="input-group">
+                    
+                    <div class="input-field">
+                        <i class="fa-solid fa-envelope"></i>
+                        <input type="email" id="loginEmail" placeholder="Email">
+                    </div>
+
+                    <div class="input-field">
+                        <i class="fa-solid fa-lock"></i>
+                        <input type="password" id="loginPassword" placeholder="Password">
+                    </div>
+                    <h3 id="message"></h3>
+                </div>
+                <div class="btn-field">
+                    <button type="button" id="loginButton">Sign in</button>
+                </div>
+                <div  id="creationMessage">Hello</div>
+            </form>
+        </div>
+    </div>
+
+    </div>
+
+    <script src="/js/login.js"></script>
+</body>
+</html>
